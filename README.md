@@ -25,6 +25,10 @@ Demo application to add cars in garage.
 
 This project follows a new architecture proposed by me which has a layer on top of MVVM architecture. It has a separate controller apart from View model and View controller named as UI controller for handling UI operations which makes code supper loosely coupled.
 
+It follows a proper folder structure to manage files within the project.
+
+The project is implemented using Protocol and Object oriented design while trying to satisfy SOLID principles at an extent.
+
 # Project Contents
 
 ## 1. ApplicationMains - Appdelegate, launchscreen, assets
