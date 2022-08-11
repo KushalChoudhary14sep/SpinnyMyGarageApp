@@ -1,7 +1,7 @@
 # SpinnyMyGarageApp
 Demo application to add cars in garage.
 
-#Installation process
+## Installation process
 
 1. Copy HTTPS link under "Code" drop down.
 2. Open terminal
@@ -11,7 +11,7 @@ Demo application to add cars in garage.
 6. Use command - pod install
 7. Open Workspace
 
-#Tools used
+## Tools used
 
 1. Xcode IDE - Used to develop the application
 2. Storyboard in Xcode - To develop User Inteface of the Application.
