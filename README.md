@@ -36,7 +36,8 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   I. Appconsntant - A structure with static variables to store hardcoded strings used throughout the application.
 
-3. Networking - Third Party Library "Moya" a wrapper to URLSession and Alomafire used to trigger Network calls in the application. URL session is not used in this application because I wanted to demonstrate the using of Moya as it gives the ability to the developer to write structured code.
+## 3. Networking 
+Third Party Library "Moya" a wrapper to URLSession and Alomafire used to trigger Network calls in the application. URL session is not used in this application because I wanted to demonstrate the using of Moya as it gives the ability to the developer to write structured code.
 
   I. API Provider -
 
@@ -46,7 +47,7 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   a. CarRestManager - Singleton class used to call cars API to fetch car make and model.
 
-4. Model 
+## 4. Model 
 
   I. User - Class for user containing username, password and car list associated with a user. This class inherits Object class of Realm to manage properties in database instead of directly using the Object class.
 
@@ -58,7 +59,7 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   c. CarModelResponse - Response model for mapping of json fetched from API to Codable.
 
-5. Managers
+## 5. Managers
 
   I. Realm manager - Singleton class containing methods to interact with realm. Methods include save and delete objects to and from database respectively.
 
@@ -66,7 +67,7 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   III. Car manager - Singleton class containing methods to interact with realm. Methods include save, delete and get car objects to and from database respectively.
 
-6. View - View has all the controllers, custom views and storyboard.
+## 6. View - View has all the controllers, custom views and storyboard.
 
   I. Custom Views -
 
@@ -104,7 +105,7 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   III. Storyboard - Storyboard used to create User Interface of the Login, Signup and Dashboard screen.
 
-7. Extension 
+## 7. Extension 
 
   a. UIViewcontroller - Used to create functions used in UIviewController for entire project such as show tost message, show alert, etc,. 
 
@@ -112,4 +113,4 @@ III. Assets - Used for managing image asset. We can also create one more asset f
 
   c. Results + Realm - Used to create function of generic type which appends result of database in an array and returns the array.
 
-8. PlayDemoTests - Test cases for API calls.
+## 8. PlayDemoTests - Test cases for API calls.
