@@ -27,12 +27,12 @@ This project follows a new architecture proposed by me which has a layer on top 
 
 # Project Contents
 
-1. ApplicationMains - Appdelegate, launchscreen, assets
+## 1. ApplicationMains - Appdelegate, launchscreen, assets
 I. Appdelegate - Root object of App and manages App's shared behaviour.
 II. Launchscreen - Not used as default page when the application is launched is Login screen when the user is not loggedIn in the application.
 III. Assets - Used for managing image asset. We can also create one more asset file to manage color asset.
 
-2. Helper
+## 2. Helper
 
   I. Appconsntant - A structure with static variables to store hardcoded strings used throughout the application.
 
