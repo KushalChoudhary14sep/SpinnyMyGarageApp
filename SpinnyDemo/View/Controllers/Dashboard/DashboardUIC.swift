@@ -8,18 +8,14 @@
 import Foundation
 import UIKit
 
-// - Protocol
-///   Connects with DashboardViewModel to fetch car make list and model list on selection of select car make and  select car model respectively.
 protocol DropDownDelegate: AnyObject {
     func fetchCarModelData(makeID: Int)
 }
 
-///   Connects with DashboardViewmodel to fetch list of cars saved in database.
 protocol FetchCarListDelegate: AnyObject {
     func fetchCarList()
 }
 
-// - Class to handle UI operations for Dashboard.
 class DashboardUIController: NSObject {
     weak var view: DashboardView? {
         didSet {
@@ -141,8 +137,6 @@ class DashboardUIController: NSObject {
     
 }
 
-// - Extension
-/// Delegate and Datasource methods for UIPicker used to select car make and model type.
 extension DashboardUIController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

@@ -13,7 +13,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="159" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="SpinnyDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="483" height="159"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="483" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -82,6 +82,7 @@
                     <constraint firstItem="XPd-Qi-4i8" firstAttribute="top" secondItem="Lk5-gs-1ew" secondAttribute="bottom" constant="4" id="a5m-7p-a5R"/>
                     <constraint firstAttribute="trailing" secondItem="Lk5-gs-1ew" secondAttribute="trailing" constant="32" id="bQK-Pk-yoX"/>
                     <constraint firstItem="EBM-vR-TMV" firstAttribute="top" secondItem="XPd-Qi-4i8" secondAttribute="bottom" constant="20" id="qQc-U3-Heo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EBM-vR-TMV" secondAttribute="bottom" constant="2" id="qWC-hH-znL"/>
                     <constraint firstItem="EBM-vR-TMV" firstAttribute="leading" secondItem="XPd-Qi-4i8" secondAttribute="leading" id="r6O-cq-GpC"/>
                 </constraints>
             </tableViewCellContentView>
