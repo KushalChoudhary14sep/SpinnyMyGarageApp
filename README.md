@@ -32,52 +32,52 @@ I. Appdelegate - Root object of App and manages App's shared behaviour.
 II. Launchscreen - Not used as default page when the application is launched is Login screen when the user is not loggedIn in the application.
 III. Assets - Used for managing image asset. We can also create one more asset file to manage color asset.
 
-## 2. Helper
+## 2. Helper - Appconsntant
 
-  I. Appconsntant - A structure with static variables to store hardcoded strings used throughout the application.
+  I. A structure with static variables to store hardcoded strings used throughout the application.
 
-## 3. Networking 
+## 3. Networking - API Provider, RestManager
 Third Party Library "Moya" a wrapper to URLSession and Alomafire used to trigger Network calls in the application. URL session is not used in this application because I wanted to demonstrate the using of Moya as it gives the ability to the developer to write structured code.
 
-  I. API Provider -
+I. API Provider -
 
-  a. CarsAPI - Contains API components such as base URL, path, method, data, task and headers defined for car make and car model.
+- CarsAPI - Contains API components such as base URL, path, method, data, task and headers defined for car make and car model.
 
-  II. RestManager -
+II. RestManager -
 
-  a. CarRestManager - Singleton class used to call cars API to fetch car make and model.
+- CarRestManager - Singleton class used to call cars API to fetch car make and model.
 
-## 4. Model 
+## 4. Model - User, Car
 
-  I. User - Class for user containing username, password and car list associated with a user. This class inherits Object class of Realm to manage properties in database instead of directly using the Object class.
+I. User - Class for user containing username, password and car list associated with a user. This class inherits Object class of Realm to manage properties in database instead of directly using the Object class.
 
-  II. Car - Car model, CarMakeResponse, CarModelResponse
+II. Car - Car model, CarMakeResponse, CarModelResponse
 
-  a. Car model - Class for car containing car make, model and image. This class inherits Object class of Realm to manage properties in database instead of directly using the Object class.
+- Car model - Class for car containing car make, model and image. This class inherits Object class of Realm to manage properties in database instead of directly using the Object class.
 
-  b. CarMakeResponse - Response model for mapping of json fetched from API to Codable.
+- CarMakeResponse - Response model for mapping of json fetched from API to Codable.
 
-  c. CarModelResponse - Response model for mapping of json fetched from API to Codable.
+- CarModelResponse - Response model for mapping of json fetched from API to Codable.
 
-## 5. Managers
+## 5. Managers - Realm manager, User manager, Car manager
 
-  I. Realm manager - Singleton class containing methods to interact with realm. Methods include save and delete objects to and from database respectively.
+I. Realm manager - Singleton class containing methods to interact with realm. Methods include save and delete objects to and from database respectively.
 
-  II. User manager - Singleton class containing methods to interact with realm and variables to store current user, and store username in User defaults which is to be used for maintaing login state of the application. Methods include save and get user objects to and from database respectively.
+II. User manager - Singleton class containing methods to interact with realm and variables to store current user, and store username in User defaults which is to be used for maintaing login state of the application. Methods include save and get user objects to and from database respectively.
 
-  III. Car manager - Singleton class containing methods to interact with realm. Methods include save, delete and get car objects to and from database respectively.
+III. Car manager - Singleton class containing methods to interact with realm. Methods include save, delete and get car objects to and from database respectively.
 
-## 6. View - View has all the controllers, custom views and storyboard.
+## 6. View - Controllers, Custom views and storyboard.
 
-  I. Custom Views -
+I. Custom Views -
 
-  a. UIButton - Custom UIButton class created and used in the application which has same design. Example logout, add car image and delete button with corner radius.
+- UIButton - Custom UIButton class created and used in the application which has same design. Example logout, add car image and delete button with corner radius.
 
-  b. UITextField - Custom UITextField class created to provide padding and right view and to be used within the application.
+- UITextField - Custom UITextField class created to provide padding and right view and to be used within the application.
 
-  c. TableViewCell Xib - Custom table view cell xib used to create custom cell for list of cars to te shown in dashboard. Creating XIB gives flexibility on creating separate UI for cell and to be used within tableview. 
+- TableViewCell Xib - Custom table view cell xib used to create custom cell for list of cars to te shown in dashboard. Creating XIB gives flexibility on creating separate UI for cell and to be used within tableview. 
 
-  II. Controllers
+II. Controllers
 
   a. Login
 
@@ -103,14 +103,14 @@ Third Party Library "Moya" a wrapper to URLSession and Alomafire used to trigger
 
   - DashboardViewModel - Class used for performing database related actions.
 
-  III. Storyboard - Storyboard used to create User Interface of the Login, Signup and Dashboard screen.
+III. Storyboard - Storyboard used to create User Interface of the Login, Signup and Dashboard screen.
 
-## 7. Extension 
+## 7. Extension - UIViewcontroller, UIApplication, Realm
+ 
+- UIViewcontroller - Used to create functions used in UIviewController for entire project such as show tost message, show alert, etc,. 
 
-  a. UIViewcontroller - Used to create functions used in UIviewController for entire project such as show tost message, show alert, etc,. 
+- UIApplication - Used to resolve window warning for iOS 15 deployment target.
 
-  b. UIApplication - Used to resolve window warning for iOS 15 deployment target.
-
-  c. Results + Realm - Used to create function of generic type which appends result of database in an array and returns the array.
+- Results + Realm - Used to create function of generic type which appends result of database in an array and returns the array.
 
 ## 8. PlayDemoTests - Test cases for API calls.
