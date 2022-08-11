@@ -81,7 +81,7 @@ I. Custom Views -
 
 II. Controllers
 
-  a. Login
+  a. Login - To give user the ability to login in the application.
 
   - LoginViewController - Class inherited from UIViewController and manage the view hirearchy.
   
@@ -89,7 +89,7 @@ II. Controllers
 
   - LoginViewModel - Class used for performing database related actions.
 
-  b. Signup
+  b. Signup - To give user the ability to signup in the application.
 
   - SignupViewController - Class inherited from UIViewController and manage the view hirearchy.
 
@@ -97,7 +97,7 @@ II. Controllers
 
   - SignupViewModel - Class used for performing database related actions.
 
-  c. Dashboard
+  c. Dashboard - After authentication is complete, It gives the user the ability to add cars to the dashboard by selectiong car make and model. It also provides the user to add car image or delete the car from dashboard. It also provides the functionality of logging out.
 
   - DashboardViewController - Class inherited from UIViewController and manage the view hirearchy.
 
